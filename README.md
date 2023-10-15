@@ -1,8 +1,8 @@
 # Bottom Panel Shortcuts
 
-Plugin for Godot 4. Provides configurable shortcuts for toggling bottom panel and for toggling any bottom window. Toggling for bottom windows works based on their position and current visibility.
+Plugin for Godot 4. Provides configurable shortcuts for toggling bottom panel and for toggling any bottom window. Toggling for bottom windows works based on position and current visibility of their buttons.
 
-It should support toggle for any bottom window, even the ones that were added through plugins.
+It supports toggle for any bottom window, even the ones that were added through plugins.
 
 ## Default shortcuts
 - Ctrl + Space: Toggle bottom panel
@@ -29,7 +29,7 @@ There you will be able to change Shortcut resource
 Note: You can't load tres files into here, it is unsupported and will cause project manager to be unable to load this project. If you set tres file here, open project.godot and under \[plugin\] setting delete any bottom_panel_shortcuts\\setting that contains Resource("file_path")
 
 ## How does bottom windows shortcuts work?
-The window that will be toggled is based on its shortcut position in this array. When shortcut is activated all buttons are filtered by visibility and then accessed by shortcut index.
+The window that will be toggled is based on currently activated shortcut's position in the array. When shortcut is activated all buttons are filtered by visibility and then accessed by shortcut's index.
  
 Because of this, theoretically this should be able to support any number of bottom panel windows, by way of growing this array. Or you can make the array smaller, if you think that default number of shortcuts is too large, or you already use these keys for other commands.
 
