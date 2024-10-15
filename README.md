@@ -1,6 +1,8 @@
 # Bottom Panel Shortcuts
 
-Plugin for Godot 4. Provides configurable shortcuts for toggling bottom panel and for toggling any bottom window. Toggling for bottom windows works based on position and current visibility of their buttons.
+Plugin for Godot 4.2. Provides configurable shortcuts for bottom panels. Includes last opened bottom window and positional shortcuts that depends on currently visible buttons to bottom panels.
+
+If you are on higher version (> 4.2) Godot added `Toggle Last Opened Bottom Panel` shortcut that is doing the same thing as this plugin, except positional shortcuts. You are still free to use this plugin if you like positional shortcuts (Alt + 1,... Alt + 9).
 
 It supports toggle for any bottom window, even the ones that were added through plugins.
 
